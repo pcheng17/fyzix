@@ -47,7 +47,6 @@ pub fn clamp<T: PartialOrd>(input: T, min: T, max: T) -> T {
 //     }
 // }
 
-
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -62,7 +61,7 @@ mod tests {
 
     #[test]
     #[should_panic]
-    fn test_bad_input() {
+    fn test_clamp_panic() {
         clamp(3, 5, 4);
     }
 }
